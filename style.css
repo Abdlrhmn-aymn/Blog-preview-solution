@@ -1,0 +1,112 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;800&display=swap');
+
+:root {
+    --clr--yellow: hsl(47, 88%, 63%);
+    --clr--white: hsl(0, 0%, 100%);
+    --clr--grey: hsl(0, 0%, 50%);
+    --clr--black: hsl(0, 0%, 7%);
+    --fs--normal: 16px;
+    --fw--600: 600;
+    --fw--bold: 800;
+    --ff-sans: 'Figtree', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: var(--ff-sans);
+}
+
+body {
+    background-color: var(--clr--yellow);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--fs--normal);
+}
+
+.card-container {
+    background-color: var(--clr--white);
+    border: 1px solid var(--clr--black);
+    border-radius: 15px;
+    height: 480px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 8px 8px 0px;
+}
+
+.card-container:hover {
+    box-shadow: 13px 13px 0px;
+}
+
+.image-container {
+    margin-top: 20px;
+}
+
+.image {
+    width: 310px;
+    border-radius: 10px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-top: 17px;
+    font-size: 0.8rem;
+}
+
+.head {
+    background-color: var(--clr--yellow);
+    padding: 5px 12px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+}
+
+.date {
+    font-weight: var(--fw--600);
+    margin-bottom: 20px;
+}
+
+.title {
+    font-weight: var(--fw--bold);
+    font-size: 1.39rem;
+    margin-bottom: 17px;
+    cursor: pointer;
+}
+
+.title:hover {
+    color: var(--clr--yellow);
+}
+
+.description {
+    line-height: 22px;
+    font-size: 0.9rem;
+    color: var(--clr--grey);
+    margin-bottom: 25px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-pic {
+    width: 27px;
+    margin-right: 12px;
+}
+
+.name {
+    font-weight: var(--fw--bold);
+    font-size: 0.8rem;
+}
+
